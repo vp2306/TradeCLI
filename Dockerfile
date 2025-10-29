@@ -14,6 +14,6 @@ FROM alpine:latest
 
 COPY --from=build /app/trade-cli .
 
-COPY config.yaml ./config.yaml
+COPY config/config.yaml ./config.yaml
 
 ENTRYPOINT ["./trade-cli"]
