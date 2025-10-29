@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/vp2306/terminal-trader/internal/api"
-	"github.com/vp2306/terminal-trader/internal/config"
+	"github.com/vp2306/TradeCLI/internal/api"
+	"github.com/vp2306/TradeCLI/internal/config"
 )
 
 var (

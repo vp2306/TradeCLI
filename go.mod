@@ -1,4 +1,4 @@
-module github.com/vp2306/terminal-trader
+module github.com/vp2306/TradeCLI
 
 go 1.21
 

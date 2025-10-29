@@ -6,8 +6,8 @@ import (
 	"github.com/alpacahq/alpaca-trade-api-go/v3/alpaca"
 	"github.com/alpacahq/alpaca-trade-api-go/v3/marketdata"
 	"github.com/shopspring/decimal"
-	"github.com/vp2306/terminal-trader/internal/config"
-	"github.com/vp2306/terminal-trader/internal/models"
+	"github.com/vp2306/TradeCLI/internal/config"
+	"github.com/vp2306/TradeCLI/internal/models"
 )
 
 // Client wraps the Alpaca API client

@@ -23,8 +23,8 @@ Terminal Trader provides a CLI interface for paper trading through the Alpaca AP
 ## Installation
 
 ```bash
-git clone https://github.com/vp2306/terminal-trader.git
-cd terminal-trader
+git clone https://github.com/vp2306/TradeCLI.git
+cd TradeCLI
 go mod download
 ```
 
@@ -50,29 +50,29 @@ trading:
 
 ```bash
 # View account information
-go run cmd/terminal-trader/main.go account
+go run cmd/trade-cli/main.go account
 
 # Get stock quote
-go run cmd/terminal-trader/main.go quote AAPL
+go run cmd/trade-cli/main.go quote AAPL
 
 # Buy shares
-go run cmd/terminal-trader/main.go buy AAPL -q 10
+go run cmd/trade-cli/main.go buy AAPL -q 10
 
 # Sell shares
-go run cmd/terminal-trader/main.go sell AAPL -q 5
+go run cmd/trade-cli/main.go sell AAPL -q 5
 
 # View portfolio
-go run cmd/terminal-trader/main.go portfolio
+go run cmd/trade-cli/main.go portfolio
 
 # View order history
-go run cmd/terminal-trader/main.go history
+go run cmd/trade-cli/main.go history
 ```
 
 ## Project Structure
 
 ```
-terminal-trader/
-├── cmd/terminal-trader/    # Application entry point
+TradeCLI/
+├── cmd/trade-cli/         # Application entry point
 ├── internal/
 │   ├── api/               # Alpaca API client
 │   ├── config/            # Configuration management
@@ -90,6 +90,6 @@ terminal-trader/
 ## Building
 
 ```bash
-go build -o terminal-trader cmd/terminal-trader/main.go
-./terminal-trader account
+go build -o trade-cli cmd/trade-cli/main.go
+./trade-cli account
 ```
